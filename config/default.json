@@ -13,5 +13,32 @@
     "client": "sqlite3",
     "connection": "feathers-chat.sqlite",
     "useNullAsDefault": true
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "2Dindt/gCAaLbjUVo3mtvFF8B5DucQGf",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "oauth": {
+      "github": {
+        "key": "094d0fe49604eb009f28",
+        "secret": "39b8e7ecd223fd3684ea94c8c9ed1e08425eb4c8"
+      }
+    }
   }
 }
