@@ -36,7 +36,9 @@ This app comes with a powerful command line interface for Feathers. Here are a f
 $ npx feathers help                           # Show all commands
 $ npx feathers generate service               # Generate a new Service
 ```
-
+ 
+ `SQlite viewer` extension recommended for viewing the database(SQlite) in VScode. 
+ 
 ## Help
 
 For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
